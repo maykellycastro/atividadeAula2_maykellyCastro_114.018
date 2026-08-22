@@ -1,101 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nike</title>
-    <link rel="stylesheet" href="./assets/style.css">
+    <title>nike</title>
+
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body>
-    <header>
+    <header class="menu">
         <nav>
-            <h1>nike</h1>
+
+            <img src="assets/NikeLogo.png" alt="Nike Logo">
 
             <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produto">Produtos</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#compra">Como comprar</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+
         </nav>
     </header>
-    <main>
-        <section id="inicio">
-            <h2>Just Do IT</h2>
 
-            <p>Confira produtos esportivos nike</p>
+    <main class="home">
 
-            <img src="./assets/nikeImg.jpg" alt="produtos esportivos">
+        <h2>Just Do It</h2>
+        <p>Confira Nossos Produtos Esportivos</p>
+
+        <section id="home" class="produtos">
+
+            <div class="cardsProd">
+                <img src="assets/airmax.webp" alt="Air Max">
+                <h3>Nike Air Max</h3>
+                <p>R$ 399,90</p>
+            </div>
+
+            <div class="cardsProd">
+                <img src="assets/boneNike.webp" alt="Bone Nike">
+                <h3>Boné Nike Dri-Fit</h3>
+                <p>R$ 150,90</p>
+            </div>
+
+            <div class="cardsProd">
+                <img src="assets/camisaNIke.webp" alt="Nike Camisa">
+                <h3>Camisa Nike Dri-Fit</h3>
+                <p>R$ 500,90</p>
+            </div>
+
+            <div class="cardsProd">
+                <img src="assets/shortNike.jpg" alt="Nike Short">
+                <h3>Short Nike Fastx</h3>
+                <p>R$ 399,90</p>
+            </div>
+
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="sobreText">
+                <h2>Sobre Nike</h2>
+
+                <p>
+                    Criada para inspirar atletas de todos os níveis,
+                    a Nike desenvolve produtos que combinam tecnologia,
+                    conforto e design.
+                </p>
+
+            </div>
 
         </section>
 
-        <section id="produtos">
-            <h2>produtos</h2>
+        <section id="contato" class="contato">
 
-            <p>encontre produtos</p>
+            <h2>Contato</h2>
 
-            <ul>
-                <li>tenis esportivo</li>
-                <li>jaquetas</li>
-                <li>acessorios</li>
-                <li>camisas</li>
-                <li>calcas e shorts</li>
-            </ul>
+            <div class="contatInfo">
+                <div class="contatItem">
+                    <h3>E-mail</h3>
+                    <p>contato@nike.com</p>
+                </div>
 
-            <h3>destaque</h3>
-
-            <p>produtos nike combinam <strong>estilo, conforto e desempenho</strong></p>
-        </section>
-
-        <section id="sobre">
-            <h2>sobre</h2>
-
-            <p>A Nike e uma marca conhecida mundialmente por seus
-                produtos esportivos e por sua presenca no mundo dos
-                esportes e da moda.
-            </p>
-
-            <p>A marca busca incentivar as pessoas a praticarem esportes
-                e superarem seus proprios limites.
-            </p>
-        </section>
-
-        <section id="comprar">
-            <h2>Como comprar</h2>
-
-            <ol>
-                <li>Escolha seu produto</li>
-                <li>Escolha o tamanho</li>
-                <li>Escolha a cor</li>
-                <li>Finalize seu pedido</li>
-            </ol>
-        </section>
-
-        <section id="contato">
-            <h2>contato</h2>
-
-            <p>para ver mais produtos acesse:</p>
-
-            <p>
-                <a href="https://www.nike.com.br" target="_blank">
-                    nosso site oficial
-                </a>
-            </p>
-
-            <p>
-                <a href="contatonike@nike.com">
-                    Enviar um e-mail
-                </a>
-            </p>
+                <div class="contatItem">
+                    <h3>Localização</h3>
+                    <p>Campo Grande - MS</p>
+                </div>
+            </div>
 
         </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 nike</p>
+    <footer class="footer">
+        <p>&copy; 2026 Nike. Todos os direitos reservados.</p>
     </footer>
 </body>
 

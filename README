@@ -1,0 +1,137 @@
+# Atividade Aula 03 - CSS
+# Maykelly Casrto
+# RGM: 114.018
+
+## Sobre o projeto
+
+Página institucional inspirada na marca Nike, desenvolvida utilizando **HTML e CSS**.
+
+O projeto apresenta uma página com menu de navegação, apresentação de produtos esportivos, seção sobre a marca, informações de contato e rodapé.
+
+## Informações do projeto
+
+* **Tema:** Página institucional de uma marca de produtos esportivos.
+* **Marca utilizada:** Nike.
+* **Linguagens utilizadas:** HTML e CSS.
+* **Arquivo HTML:** `index.html`.
+* **Arquivo CSS:** `assets/style.css`.
+* **Pasta de imagens:** `assets/`.
+
+## Estrutura da página
+
+A página foi organizada nas seguintes seções:
+
+* **Home:** apresentação da página com o slogan "Just Do It".
+* **Produtos:** apresentação de quatro produtos esportivos com imagem, nome e preço.
+* **Sobre:** breve descrição sobre a Nike.
+* **Contato:** informações de e-mail, telefone e localização.
+* **Footer:** rodapé com os direitos reservados.
+
+## Cores escolhidas
+
+* **Preto:** utilizado no menu, seção "Sobre" e rodapé.
+* **Branco:** utilizado como fundo dos cards e nos textos sobre fundos escuros.
+* **Cinza claro:** utilizado no fundo da página e na seção de contato.
+* **Vermelho:** utilizado para destacar os preços dos produtos.
+
+As cores foram escolhidas para criar uma identidade visual moderna, limpa e relacionada à proposta esportiva da página.
+
+## Seletores utilizados
+
+### Seletor por tag
+
+Foram utilizados seletores por tag, como:
+
+* `body`
+* `nav`
+* `img`
+
+### Seletor por classe
+
+Foram utilizados seletores por classe, como:
+
+* `.menu`
+* `.home`
+* `.produtos`
+* `.cardsProd`
+* `.sobre`
+* `.sobreText`
+* `.contatInfo`
+* `.contatItem`
+* `.footer`
+
+### Seletor por ID
+
+Também foram utilizados seletores por ID, como:
+
+* `#home`
+* `#produto`
+* `#sobre`
+* `#contato`
+
+## Propriedades CSS utilizadas
+
+Durante o desenvolvimento foram utilizadas diversas propriedades CSS para organizar e estilizar a página, entre elas:
+
+* `color`
+* `background-color`
+* `font-family`
+* `font-size`
+* `text-align`
+* `line-height`
+* `margin`
+* `padding`
+* `border`
+* `border-radius`
+* `width`
+* `max-width`
+* `box-sizing`
+
+Também foram utilizados recursos como `display: flex`, `display: grid`, `gap`, `transition` e `transform` para melhorar a organização e a interação visual da página.
+
+## Box Model
+
+O conceito de **Box Model** foi utilizado em diversos elementos da página.
+
+* **Margin:** utilizada para criar espaçamento externo entre os elementos e seções.
+* **Padding:** utilizada para criar espaçamento interno nos cards, seções, menu e rodapé.
+* **Border:** utilizada para destacar cards, seções e elementos do menu.
+* **Border-radius:** utilizada para criar cantos arredondados nos cards e nas seções.
+* **Box-sizing:** utilizado com `border-box` para facilitar o controle das dimensões dos elementos.
+
+## Organização visual
+
+O CSS foi utilizado para criar uma identidade visual moderna e organizada.
+
+Foram aplicados estilos para:
+
+* Organizar o menu de navegação;
+* Destacar os títulos;
+* Criar cards para os produtos;
+* Ajustar as imagens dos produtos;
+* Organizar as informações de contato;
+* Criar diferentes cores de fundo para as seções;
+* Definir espaçamentos e tamanhos;
+* Adicionar bordas e cantos arredondados;
+* Criar efeitos ao passar o mouse sobre os elementos;
+* Adaptar a página para diferentes tamanhos de tela.
+
+## Responsividade
+
+Foram utilizadas **Media Queries** para adaptar o layout em telas menores.
+
+Em dispositivos como tablets e celulares, os produtos passam a ser organizados em menos colunas e as informações de contato são reorganizadas verticalmente, facilitando a visualização e a navegação.
+
+## Dificuldade encontrada
+
+Uma das principais dificuldades foi organizar os elementos da página utilizando CSS, principalmente os cards de produtos, o menu e o espaçamento entre as seções.
+
+A dificuldade foi solucionada utilizando propriedades como `display: grid`, `display: flex`, `margin`, `padding`, `width` e `max-width`.
+
+Também foi necessário compreender como utilizar corretamente seletores por **tag, classe e ID** para aplicar os estilos aos diferentes elementos da página.
+
+## Conclusão
+
+O desenvolvimento desta atividade permitiu praticar os principais conceitos de CSS, como **cores, tipografia, espaçamento, Box Model, bordas, organização de elementos, seletores e responsividade**.
+
+O resultado foi uma página institucional moderna e organizada, utilizando HTML e CSS conectados por meio de um arquivo CSS externo.
