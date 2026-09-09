@@ -1,3 +1,6 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
 
 * {
     box-sizing: border-box;
@@ -17,11 +20,14 @@ body {
 }
 
 
+/* ========================================
+   MENU / HEADER
+======================================== */
 
 .menu {
     width: 100%;
     background-color: #ffffff;
-    padding: 18px 50px;
+    padding: 1rem 5%;
     border-bottom: 1px solid #e5e5e5;
 
     position: sticky;
@@ -33,33 +39,43 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 
+    /* FLEXBOX */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+
+    gap: 1rem;
 }
 
 .menu nav img {
-    width: 65px;
+    width: 4rem;
     height: auto;
 }
 
 .menu nav ul {
+    /* FLEXBOX */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 35px;
+
+    gap: 0.5rem;
+    flex-wrap: wrap;
 
     list-style: none;
 }
 
 .menu nav ul li a {
+    display: block;
+
     color: #111111;
     text-decoration: none;
 
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 
-    padding: 8px 12px;
-    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
 
     transition: 0.3s;
 }
@@ -70,107 +86,134 @@ body {
 }
 
 
+/* ========================================
+   HOME
+======================================== */
+
 .home {
     text-align: center;
-    padding: 80px 30px 40px;
+
+    padding: 5rem 5% 2.5rem;
 }
 
 .home > h2 {
-    font-size: 52px;
+    font-size: 2.8rem;
     font-weight: 800;
-    letter-spacing: -2px;
+
+    letter-spacing: -0.1rem;
 
     color: #111111;
 
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .home > p {
-    font-size: 19px;
+    font-size: 1.1rem;
+
     color: #666666;
 
-    margin-bottom: 55px;
+    margin-bottom: 3rem;
 }
 
 
+/* ========================================
+   PRODUTOS
+======================================== */
 
 .produtos {
     max-width: 1200px;
-    margin: 0 auto 100px;
 
+    margin: 0 auto 6rem;
+
+    padding: 0 5%;
+
+    /* CSS GRID */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+
+    /* MOBILE: uma coluna */
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
 }
+
+
+/* ========================================
+   CARDS DOS PRODUTOS
+======================================== */
 
 .cardsProd {
     background-color: #ffffff;
 
-    padding: 22px;
+    padding: 1.4rem;
 
     border: 1px solid #e5e5e5;
-    border-radius: 18px;
+    border-radius: 1.1rem;
 
     text-align: left;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 .cardsProd:hover {
-    transform: translateY(-8px);
+    transform: translateY(-0.5rem);
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0.9rem 2rem rgba(0, 0, 0, 0.12);
 }
 
 .cardsProd img {
     display: block;
 
     width: 100%;
-    height: 230px;
+    height: 14rem;
 
     object-fit: contain;
 
-    margin: 0 auto 20px;
+    margin: 0 auto 1.2rem;
 }
 
 .cardsProd h3 {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 700;
 
     color: #111111;
 
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 }
 
 .cardsProd p {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
 
     color: #e30613;
 }
 
 
+/* ========================================
+   SOBRE
+======================================== */
 
 .sobre {
     max-width: 1200px;
 
-    margin: 0 auto 100px;
+    margin: 0 auto 6rem;
 
-    padding: 75px 50px;
+    padding: 4rem 5%;
 
     background-color: #111111;
 
     color: #ffffff;
 
-    border-radius: 24px;
+    border-radius: 1.5rem;
 
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.9rem 2.5rem rgba(0, 0, 0, 0.15);
 }
 
 .sobreText {
-    max-width: 800px;
+    max-width: 50rem;
 
     margin: 0 auto;
 
@@ -178,15 +221,15 @@ body {
 }
 
 .sobreText h2 {
-    font-size: 38px;
+    font-size: 2.3rem;
 
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 
-    letter-spacing: -1px;
+    letter-spacing: -0.06rem;
 }
 
 .sobreText p {
-    font-size: 18px;
+    font-size: 1.1rem;
 
     color: #d6d6d6;
 
@@ -194,84 +237,106 @@ body {
 }
 
 
+/* ========================================
+   CONTATO
+======================================== */
+
 #contato {
     max-width: 1200px;
 
-    margin: 0 auto 80px;
+    margin: 0 auto 5rem;
 
-    padding: 65px 30px;
+    padding: 4rem 5%;
 
     background-color: #e9e9e9;
 
     border: 1px solid #dddddd;
 
-    border-radius: 24px;
+    border-radius: 1.5rem;
 
     text-align: center;
 }
 
 #contato h2 {
-    font-size: 36px;
+    font-size: 2.2rem;
 
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 
     color: #111111;
 }
+
+
+/* ========================================
+   INFORMAÇÕES DE CONTATO
+======================================== */
 
 .contatInfo {
     max-width: 1000px;
 
     margin: 0 auto;
 
+    /* FLEXBOX */
     display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
     justify-content: center;
 
-    gap: 25px;
+    gap: 1.5rem;
+
+    /* Permite quebra dos elementos */
+    flex-wrap: wrap;
 }
 
 .contatItem {
-    width: 280px;
+    width: 100%;
+    max-width: 17.5rem;
 
-    padding: 28px 20px;
+    padding: 1.7rem 1.2rem;
 
     background-color: #ffffff;
 
     border: 1px solid #dddddd;
 
-    border-radius: 16px;
+    border-radius: 1rem;
 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
 
     transition: 0.3s;
 }
 
 .contatItem:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3rem);
 
     border-color: #111111;
 }
 
 .contatItem h3 {
-    font-size: 18px;
+    font-size: 1.1rem;
 
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
 
     color: #111111;
 }
 
 .contatItem p {
-    font-size: 16px;
+    font-size: 1rem;
 
     color: #666666;
 }
 
+
+/* ========================================
+   FOOTER
+======================================== */
 
 .footer {
     background-color: #111111;
 
     color: #ffffff;
 
-    padding: 30px 20px;
+    padding: 2rem 5%;
 
     text-align: center;
 
@@ -279,8 +344,124 @@ body {
 }
 
 .footer p {
-    font-size: 14px;
+    font-size: 0.9rem;
 
     color: #cccccc;
 }
 
+
+/* ========================================
+   RESPONSIVIDADE
+   TABLET / DESKTOP
+======================================== */
+
+@media (min-width: 768px) {
+
+    /* -------------------------------
+       MENU DESKTOP
+    -------------------------------- */
+
+    .menu {
+        padding: 1.1rem 5%;
+    }
+
+    .menu nav {
+        flex-direction: row;
+
+        justify-content: space-between;
+
+        align-items: center;
+
+        gap: 2rem;
+    }
+
+    .menu nav ul {
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 2rem;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* -------------------------------
+       HOME DESKTOP
+    -------------------------------- */
+
+    .home {
+        padding: 6rem 5% 3rem;
+    }
+
+    .home > h2 {
+        font-size: 3.5rem;
+    }
+
+    .home > p {
+        font-size: 1.2rem;
+    }
+
+
+    /* -------------------------------
+       PRODUTOS DESKTOP
+    -------------------------------- */
+
+    .produtos {
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 1.5rem;
+    }
+
+
+    /* -------------------------------
+       CONTATO DESKTOP
+    -------------------------------- */
+
+    .contatInfo {
+        flex-direction: row;
+
+        justify-content: center;
+
+        align-items: stretch;
+
+        gap: 1.5rem;
+    }
+
+    .contatItem {
+        width: 17.5rem;
+    }
+
+
+    /* -------------------------------
+       SOBRE DESKTOP
+    -------------------------------- */
+
+    .sobre {
+        padding: 5rem 5%;
+    }
+
+    .sobreText h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ========================================
+   TELAS GRANDES
+======================================== */
+
+@media (min-width: 1100px) {
+
+    .menu nav ul {
+        gap: 2.2rem;
+    }
+
+    .produtos {
+        gap: 2rem;
+    }
+
+    .cardsProd {
+        padding: 1.5rem;
+    }
+}
