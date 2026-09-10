@@ -1,6 +1,4 @@
-/* ========================================
-   CONFIGURAÇÕES GERAIS
-======================================== */
+
 
 * {
     box-sizing: border-box;
@@ -20,9 +18,7 @@ body {
 }
 
 
-/* ========================================
-   MENU / HEADER
-======================================== */
+/* menu */
 
 .menu {
     width: 100%;
@@ -86,9 +82,7 @@ body {
 }
 
 
-/* ========================================
-   HOME
-======================================== */
+/* main */
 
 .home {
     text-align: center;
@@ -115,11 +109,6 @@ body {
     margin-bottom: 3rem;
 }
 
-
-/* ========================================
-   PRODUTOS
-======================================== */
-
 .produtos {
     max-width: 1200px;
 
@@ -137,9 +126,7 @@ body {
 }
 
 
-/* ========================================
-   CARDS DOS PRODUTOS
-======================================== */
+/* card_prod */
 
 .cardsProd {
     background-color: #ffffff;
@@ -191,11 +178,6 @@ body {
     color: #e30613;
 }
 
-
-/* ========================================
-   SOBRE
-======================================== */
-
 .sobre {
     max-width: 1200px;
 
@@ -236,11 +218,6 @@ body {
     line-height: 1.8;
 }
 
-
-/* ========================================
-   CONTATO
-======================================== */
-
 #contato {
     max-width: 1200px;
 
@@ -265,11 +242,6 @@ body {
     color: #111111;
 }
 
-
-/* ========================================
-   INFORMAÇÕES DE CONTATO
-======================================== */
-
 .contatInfo {
     max-width: 1000px;
 
@@ -285,7 +257,6 @@ body {
 
     gap: 1.5rem;
 
-    /* Permite quebra dos elementos */
     flex-wrap: wrap;
 }
 
@@ -294,15 +265,10 @@ body {
     max-width: 17.5rem;
 
     padding: 1.7rem 1.2rem;
-
     background-color: #ffffff;
-
     border: 1px solid #dddddd;
-
     border-radius: 1rem;
-
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.06);
-
     transition: 0.3s;
 }
 
@@ -326,11 +292,6 @@ body {
     color: #666666;
 }
 
-
-/* ========================================
-   FOOTER
-======================================== */
-
 .footer {
     background-color: #111111;
 
@@ -350,16 +311,9 @@ body {
 }
 
 
-/* ========================================
-   RESPONSIVIDADE
-   TABLET / DESKTOP
-======================================== */
+/* reponsividade */
 
 @media (min-width: 768px) {
-
-    /* -------------------------------
-       MENU DESKTOP
-    -------------------------------- */
 
     .menu {
         padding: 1.1rem 5%;
@@ -385,11 +339,6 @@ body {
         flex-wrap: wrap;
     }
 
-
-    /* -------------------------------
-       HOME DESKTOP
-    -------------------------------- */
-
     .home {
         padding: 6rem 5% 3rem;
     }
@@ -402,21 +351,12 @@ body {
         font-size: 1.2rem;
     }
 
-
-    /* -------------------------------
-       PRODUTOS DESKTOP
-    -------------------------------- */
-
     .produtos {
         grid-template-columns: repeat(4, 1fr);
 
         gap: 1.5rem;
     }
 
-
-    /* -------------------------------
-       CONTATO DESKTOP
-    -------------------------------- */
 
     .contatInfo {
         flex-direction: row;
@@ -432,11 +372,6 @@ body {
         width: 17.5rem;
     }
 
-
-    /* -------------------------------
-       SOBRE DESKTOP
-    -------------------------------- */
-
     .sobre {
         padding: 5rem 5%;
     }
@@ -445,11 +380,6 @@ body {
         font-size: 2.5rem;
     }
 }
-
-
-/* ========================================
-   TELAS GRANDES
-======================================== */
 
 @media (min-width: 1100px) {
 
